@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.env
+data/raw/
+data/duckdb/
+*.duckdb
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

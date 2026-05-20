@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TreatmentGapIndex",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["population_code", "treatment_gap_index"],
+    "properties": {
+      "population_code": { "type": "string" },
+      "treatment_gap_index": { "type": "number", "minimum": 0 },
+      "n_drug_gene_pairs": { "type": "integer" },
+      "tacrolimus_cyp3a5_delta": { "type": ["number", "null"] },
+      "azathioprine_tpmt_delta": { "type": ["number", "null"] },
+      "azathioprine_nudt15_delta": { "type": ["number", "null"] }
+    }
+  }
+}

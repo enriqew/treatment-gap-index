@@ -1,0 +1,7 @@
+treatment_gap_index:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('TGI_DUCKDB_PATH', '../data/duckdb/treatment_gap.duckdb') }}"
+      threads: 4
