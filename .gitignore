@@ -12,3 +12,8 @@ dist/
 .mypy_cache/
 .ruff_cache/
 .idea/
+
+# ── Agent/IDE session data ───────────────────────────────────────────────────
+.claude/
+.cursor/
+.aider*
