@@ -38,7 +38,7 @@ Transplant immunosuppressants in scope:
 
 | Drug | Gene | CPIC Strength | Mechanism |
 |---|---|---|---|
-| tacrolimus | CYP3A5 | Strong | CYP3A5 extensive metabolizers clear tacrolimus faster — require higher doses to reach target trough |
+| tacrolimus | CYP3A5 | Strong | CYP3A5 extensive metabolizers clear tacrolimus faster, require higher doses to reach target trough |
 | azathioprine | TPMT | Strong | TPMT poor metabolizers accumulate toxic thiopurine metabolites |
 | azathioprine | NUDT15 | Strong | NUDT15*3 carriers at elevated myelosuppression risk independent of TPMT status |
 
@@ -77,7 +77,7 @@ Transplant immunosuppressants in scope:
   especially for rare variants like NUDT15*3.
 
 - **Not a clinical decision tool.** The index is designed to prioritize where
-  pharmacogenomic testing programs would have the highest marginal benefit — it is not
+  pharmacogenomic testing programs would have the highest marginal benefit, it is not
   a substitute for validated genotyping and physician-guided dosing.
 
 - **Gene scope is limited.** Only pharmacogenes with CPIC A/B evidence for transplant
