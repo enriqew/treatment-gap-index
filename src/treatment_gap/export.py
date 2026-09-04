@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 
 
 def export_artifacts(db_path: str | None = None) -> None:
-    repo_root = Path(__file__).parents[3]
+    repo_root = Path(__file__).resolve().parents[2]
     db_path = db_path or str(repo_root / "data" / "duckdb" / "treatment_gap.duckdb")
     artifacts_dir = repo_root / "artifacts"
     artifacts_dir.mkdir(exist_ok=True)

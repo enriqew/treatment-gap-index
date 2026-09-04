@@ -14,6 +14,7 @@ ARTIFACTS = [
     "phenotype_distribution.json",
     "metadata.json",
 ]
+OPTIONAL = {"allele_frequencies.json"}
 
 
 def ingest(snapshot_date: str | None = None) -> None:
@@ -24,6 +25,12 @@ def ingest(snapshot_date: str | None = None) -> None:
     for name in ARTIFACTS:
         url = f"{BASE_URL}/{name}"
         resp = requests.get(url, timeout=30)
+        if resp.status_code == 404 and name in OPTIONAL:
+            # pgx-latam-atlas excludes allele_frequencies.json from version
+            # control: at ~86 MB it is served from the portfolio's public/
+            # directory instead. Nothing downstream needs it.
+            print(f"  {name}: not published upstream, skipping")
+            continue
         resp.raise_for_status()
         dest = out_dir / name
         dest.write_bytes(resp.content)
